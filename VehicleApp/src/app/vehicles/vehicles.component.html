@@ -1,0 +1,14 @@
+<form> 
+    <input type="hidden" name = "vehicleId"
+    [value]="service.formData.vehicleId"/>
+    <div class="form-group">
+        <label>Vehicle Year</label>
+        <input class="form-contol form-contol-lg" placeholder="2021"
+        name="VehicleYear" #vehicleDetails="ngModel" [(ngModel)="service.formData.year"]>
+    </div>
+    <div class="form-group">
+        <label>Vehicle Colour</label>
+        <input class="form-contol form-contol-lg" placeholder="Vehicle Colour"
+        name="VehicleColour" #vehicleDetails="ngModel" [(ngModel)="service.formData.Colour"]>
+    </div>
+</form>
